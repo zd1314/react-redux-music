@@ -1,0 +1,25 @@
+
+.contentBox{
+    width:300px;
+    height:100px;
+    border:5px solid #09F;
+    position:relative;
+    background-color:#FFF;
+}
+.contentBox:before,.contentBox:after{
+    content:"";
+    display:block;
+    border-width:20px;
+    position:absolute;
+    top:-40px;
+    left:50px;
+    border-style:solid dashed dashed;
+    border-color:#fff transparent transparent;
+    font-size:0;
+    line-height:0;
+    transform: rotate(180deg)
+}
+.contentBox:after{
+    bottom:1px;
+    border-color:#FFF transparent transparent;
+}
