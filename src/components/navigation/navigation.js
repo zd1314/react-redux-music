@@ -15,7 +15,9 @@ export default class Navigation extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div style={{
+        marginTop:130
+      }}>
         <ul className={'nav-wrap'}>
           {
             pathData.map((s, i) => {

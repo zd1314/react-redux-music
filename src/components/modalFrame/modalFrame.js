@@ -1,6 +1,6 @@
 import React from 'react';
 import './modalFrame.css';
-
+import 'animate.css'
 class ModalFrame extends React.Component {
   constructor() {
     super();
@@ -15,12 +15,15 @@ class ModalFrame extends React.Component {
       display: 'block',
       title: text
     });
+    this.refs.dialog.className = 'contentBox animated bounceIn'
+   
   }
 
   _close() {
     this.setState({
       display: 'none',
     });
+    this.refs.dialog.className = 'contentBox animated  bounceOut'
   }
 
   render() {
@@ -29,7 +32,9 @@ class ModalFrame extends React.Component {
 
 
     return (
-      <div className={'bgBox'} >
+      <div className={'bgBox'} style={{
+       
+      }} >
 
         <div style={{
           position: 'absolute',
@@ -41,8 +46,9 @@ class ModalFrame extends React.Component {
           background: '#fff',
           border: '1px solid #b1b4b7',
           borderRadius: 4,
-          zIndex:0
-        }} className="contentBox" ref='dialog'>
+          zIndex: 9
+         
+        }} className="contentBox animated " ref='dialog'>
           <h3 ref="h3" style={{ fontSize: me.props.fz || 34 }}>{me.props.title || '请添加标签'}</h3>
           <span className="diaLogClose" onClick={() => {
             me._close();
@@ -56,7 +62,6 @@ class ModalFrame extends React.Component {
   }
 
   componentDidMount() {
-
   }
 
   componentDidUpdate() {

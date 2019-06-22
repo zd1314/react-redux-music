@@ -4,6 +4,7 @@ import './App.css';
 import  Navigation from './components/navigation/navigation';
 import PersonalPage from './components/personalPage/personalPage';
 import AppRouter from './components/router/router';
+import Search from './components/serach/search'
 
 class App extends React.Component {
   constructor() {
@@ -22,6 +23,7 @@ class App extends React.Component {
               <Navigation />
             </div>
             <div className={'main'}>
+              <Search />
               <AppRouter />
             </div>
           </div>

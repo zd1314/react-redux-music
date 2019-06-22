@@ -1,4 +1,5 @@
 import React from 'react';
+
 import ModalFrame from '../modalFrame/modalFrame';
 import { Link } from 'react-router-dom';
 class PersonalPage extends React.Component {
@@ -10,6 +11,7 @@ class PersonalPage extends React.Component {
     this._modalRef._open()
   }
   _hide() {
+    console.log(88)
     this._modalRef._close();
   }
 
@@ -24,10 +26,13 @@ class PersonalPage extends React.Component {
 
             </span>
           </Link>
-          <h3>丹妮儿💕</h3>
-          <div className='level'></div>
+          <div className='ueserName'>
+            <h3>丹妮儿💕</h3>
+            <div className='level'></div>
+          </div>
+        
         </header>
-        <ModalFrame ref={ref => this._modalRef = ref} width={261} height={295} left={22} top={93}>
+        <ModalFrame ref={ref => this._modalRef = ref} width={261} height={295} left={18} top={100}>
 
         </ModalFrame>
       </div>
