@@ -7,13 +7,43 @@
   display: flex;
   
 }
-.search-wrap .left{
+.tab-wrap{
+  width: 100px;
+  position: absolute;
+  left:400px ;
+  top:15px ;
+  display: flex
+}
+.tab-wrap .left,
+
+.tab-wrap .right,
+.tab-wrap .activeLeft,
+.tab-wrap .activeRight{
+ width: 16px;
+  height: 16px;
+  display: block
+}
+.tab-wrap .left{
+  background: url('./zuoAcitive.png') no-repeat;
  
+  
+}
+
+.tab-wrap .right{
+   margin-left: 20px;
+   
+  background: url('./you.png') no-repeat
 
 }
-.search-wrap .right{
- 
 
+.tab-wrap .activeRight{
+  
+  background: url('./youActive.png') no-repeat;
+  margin-left: 20px;
+  
+}
+.tab-wrap .activeLeft{
+  background: url('./zuoAcitive.png') no-repeat;
 }
 .search-wrap .search-item{
   width: 244px;
@@ -26,9 +56,52 @@
   top:14px
   
 }
+.search-item-box{
+  width:140px;
+  display: flex;
+  text-align: center;
+  
+  position: relative;
+}
 .search-item input{
   outline: none;
-  width: 220px;
   background: #e6e6e6;
   border: none;
+  margin-left: 10px;
+  margin-top: 4px
+}
+.search-item .search{
+  width: 16px;
+  height: 16px;
+  background: url(./sousuo.png);
+  background-size: 100% 100%;
+  display: block;
+  position: absolute;
+  left:-14px;
+  top:3px
+}
+
+/*弹框----内容*/
+.concern{
+  border-bottom: 1px solid #ebebeb
+}
+.concern ul{
+  display: flex;
+  box-sizing: border-box;
+  padding: 4px
+}
+.concern ul li{
+  flex:1;
+  font-size: 12px;
+  border-right:1px solid #ebebeb
+}
+.concern ul li:last-child{
+   border:none
+}
+.concern ul li .name{
+  color:black;
+  font-weight: bold
+}
+.concern ul li .value{
+  color:#666666
 }

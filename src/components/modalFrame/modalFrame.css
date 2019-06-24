@@ -5,6 +5,7 @@
     border:5px solid #09F;
     position:relative;
     background-color:#FFF;
+    
 }
 .contentBox:before,.contentBox:after{
     content:"";

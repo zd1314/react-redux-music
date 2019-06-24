@@ -45,7 +45,7 @@ class ModalFrame extends React.Component {
           display: this.state.display,
           background: '#fff',
           border: '1px solid #b1b4b7',
-          borderRadius: 4,
+          borderRadius: 6,
           zIndex: 9
          
         }} className="contentBox animated " ref='dialog'>

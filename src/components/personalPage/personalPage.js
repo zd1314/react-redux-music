@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ModalFrame from '../modalFrame/modalFrame';
+import Concern from '../concern/concern';
 import { Link } from 'react-router-dom';
 class PersonalPage extends React.Component {
   constructor(props) {
@@ -32,8 +33,8 @@ class PersonalPage extends React.Component {
           </div>
         
         </header>
-        <ModalFrame ref={ref => this._modalRef = ref} width={261} height={295} left={18} top={100}>
-
+        <ModalFrame ref={ref => this._modalRef = ref} width={261} height={295} left={16} top={90}> 
+          <Concern />
         </ModalFrame>
       </div>
     )
