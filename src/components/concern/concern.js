@@ -18,8 +18,11 @@ class Concern extends React.Component {
       </li>
     })
   }
+ 
   render() {
-    return <div>
+    return <div style={{
+      marginTop:20
+    }}>
       <div className={'concern'}>
         <ul>
           {this._addList()}

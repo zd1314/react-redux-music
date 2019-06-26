@@ -1,8 +1,7 @@
 import React from 'react';
-
-import ModalFrame from '../modalFrame/modalFrame';
-import Concern from '../concern/concern';
 import { Link } from 'react-router-dom';
+import ModalFrame from '../modalFrame/modalFrame';
+import Load from './loading';
 class PersonalPage extends React.Component {
   constructor(props) {
     super(props);
@@ -12,8 +11,7 @@ class PersonalPage extends React.Component {
     this._modalRef._open()
   }
   _hide() {
-    console.log(88)
-    this._modalRef._close();
+    // this._modalRef._close();
   }
 
   render() {
@@ -33,11 +31,12 @@ class PersonalPage extends React.Component {
           </div>
         
         </header>
-        <ModalFrame ref={ref => this._modalRef = ref} width={261} height={295} left={16} top={90}> 
-          <Concern />
+        <ModalFrame ref={ref => this._modalRef = ref} width={261} height={295} left={19} top={95}>
+          <Load />
+          
         </ModalFrame>
       </div>
-    )
+    ) 
   }
 }
 export default PersonalPage;

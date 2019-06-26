@@ -93,8 +93,10 @@
 .concern ul li{
   flex:1;
   font-size: 12px;
-  border-right:1px solid #ebebeb
+  border-right:1px solid #ebebeb;
+   cursor: pointer;
 }
+
 .concern ul li:last-child{
    border:none
 }
@@ -104,4 +106,81 @@
 }
 .concern ul li .value{
   color:#666666
+}
+.concern .name:hover{
+  color:#62bf82;
+ 
+}
+/*进度条*/
+#container {
+  width: 172px;
+  height: 4px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  margin-left: 20px;
+  margin-top: 5px;
+  position: relative;
+}
+
+#container span {
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border: 3px solid #f0f0f0;
+  display: block;
+  border-radius: 100%;
+  position: absolute;
+  left:35px;
+  top: -3px
+}
+
+#container span:nth-child(2) {
+  left: 135px
+}
+
+.process-wrap {
+  width: 0px;
+  height: 4px;
+  background: #62bf82;
+  border-radius: 4px;
+}
+.waterPop {
+  position: relative;
+  margin-top: -25px
+}
+.waterPop i{
+  font-size: 12px;
+  color:#666;
+  font-style:normal;
+  left:30px;
+  position: absolute
+}
+.waterPop i:nth-child(1){
+  left:29px
+}
+.waterPop i:nth-child(2){
+  left:130px
+}
+.account-warp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px
+}
+.account-warp li{
+  flex:1;
+  color:#191919;
+  font-size: 12px;
+  border-right:1px solid #ebebeb;
+  cursor: pointer;
+}
+.account-warp li:hover{
+  color:#62bf82
+}
+.account-warp li a{
+   color:#191919;
+}
+.account-warp li:last-child{
+  border: none
 }

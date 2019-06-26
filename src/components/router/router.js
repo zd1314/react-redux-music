@@ -4,6 +4,7 @@ import HomePage from '../../page/homePage/homePage';
 import Relax from '../../page/relax/relax';
 import FreeDom from '../../page/freeDom/freeDom';
 import Theme from '../../page/theme/theme';
+import PersonalPage from '../../page/personalPage/personalPage'
 export default class AppRouter extends React.Component{
   constructor(props) {
     super(props);
@@ -16,6 +17,7 @@ export default class AppRouter extends React.Component{
         <Route path='/relax' component={Relax}></Route>
         <Route path='/freeDom' component={FreeDom}></Route>
         <Route path='/theme' component={Theme}></Route>
+        <Route path='/personalPage' component={PersonalPage}></Route>
       </div>
     )
   }

@@ -25,16 +25,14 @@ class ModalFrame extends React.Component {
     });
     this.refs.dialog.className = 'contentBox animated  bounceOut'
   }
-
+ 
   render() {
     let me = this;
 
 
 
     return (
-      <div className={'bgBox'} style={{
-       
-      }} >
+      <div className={'bgBox'} >
 
         <div style={{
           position: 'absolute',
